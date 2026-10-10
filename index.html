@@ -161,7 +161,7 @@ function renderPosts(docs) {
     article.append(meta, safeText("h3", post.title), safeText("p", post.body));
     if (post.response) {
       const reply = document.createElement("div"); reply.className = "reply-box";
-      reply.append(safeText("strong", "Resposta da Chapa 21"), safeText("p", post.response), safeText("div", post.respondedBy ? "Respondido por " + post.respondedBy : "", "desc"));
+      reply.append(safeText("strong", "Resposta da Chapa 21-o futuro e agora"), safeText("p", post.response), safeText("div", post.respondedBy ? "Respondido por " + post.respondedBy : "", "desc"));
       article.append(reply);
     }
     if (isAdmin) {
